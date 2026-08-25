@@ -1,0 +1,3288 @@
+{
+ "alibaba": {
+  "api": "https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
+  "models": {
+   "qvq-max": {
+    "cost": {
+     "input": 1.2,
+     "output": 4.8
+    },
+    "last_updated": "2025-03-25"
+   },
+   "qwen-flash": {
+    "cost": {
+     "input": 0.05,
+     "output": 0.4
+    },
+    "last_updated": "2025-07-28"
+   },
+   "qwen-max": {
+    "cost": {
+     "input": 1.6,
+     "output": 6.4
+    },
+    "last_updated": "2025-01-25"
+   },
+   "qwen-mt-plus": {
+    "cost": {
+     "input": 2.46,
+     "output": 7.37
+    },
+    "last_updated": "2025-01"
+   },
+   "qwen-mt-turbo": {
+    "cost": {
+     "input": 0.16,
+     "output": 0.49
+    },
+    "last_updated": "2025-01"
+   },
+   "qwen-omni-turbo": {
+    "cost": {
+     "input": 0.07,
+     "input_audio": 4.44,
+     "output": 0.27,
+     "output_audio": 8.89
+    },
+    "last_updated": "2025-03-26"
+   },
+   "qwen-omni-turbo-realtime": {
+    "cost": {
+     "input": 0.27,
+     "input_audio": 4.44,
+     "output": 1.07,
+     "output_audio": 8.89
+    },
+    "last_updated": "2025-05-08"
+   },
+   "qwen-plus": {
+    "cost": {
+     "input": 0.4,
+     "output": 1.2,
+     "reasoning": 4
+    },
+    "last_updated": "2025-09-11"
+   },
+   "qwen-plus-character-ja": {
+    "cost": {
+     "input": 0.5,
+     "output": 1.4
+    },
+    "last_updated": "2024-01"
+   },
+   "qwen-turbo": {
+    "cost": {
+     "input": 0.05,
+     "output": 0.2,
+     "reasoning": 0.5
+    },
+    "last_updated": "2025-04-28"
+   },
+   "qwen-vl-max": {
+    "cost": {
+     "input": 0.8,
+     "output": 3.2
+    },
+    "last_updated": "2025-08-13"
+   },
+   "qwen-vl-ocr": {
+    "cost": {
+     "input": 0.72,
+     "output": 0.72
+    },
+    "last_updated": "2025-04-13"
+   },
+   "qwen-vl-plus": {
+    "cost": {
+     "input": 0.21,
+     "output": 0.63
+    },
+    "last_updated": "2025-08-15"
+   },
+   "qwen2-5-14b-instruct": {
+    "cost": {
+     "input": 0.35,
+     "output": 1.4
+    },
+    "last_updated": "2024-09"
+   },
+   "qwen2-5-32b-instruct": {
+    "cost": {
+     "input": 0.7,
+     "output": 2.8
+    },
+    "last_updated": "2024-09"
+   },
+   "qwen2-5-72b-instruct": {
+    "cost": {
+     "input": 1.4,
+     "output": 5.6
+    },
+    "last_updated": "2024-09"
+   },
+   "qwen2-5-7b-instruct": {
+    "cost": {
+     "input": 0.175,
+     "output": 0.7
+    },
+    "last_updated": "2024-09"
+   },
+   "qwen2-5-omni-7b": {
+    "cost": {
+     "input": 0.1,
+     "input_audio": 6.76,
+     "output": 0.4
+    },
+    "last_updated": "2024-12"
+   },
+   "qwen2-5-vl-72b-instruct": {
+    "cost": {
+     "input": 2.8,
+     "output": 8.4
+    },
+    "last_updated": "2024-09"
+   },
+   "qwen2-5-vl-7b-instruct": {
+    "cost": {
+     "input": 0.35,
+     "output": 1.05
+    },
+    "last_updated": "2024-09"
+   },
+   "qwen3-14b": {
+    "cost": {
+     "input": 0.35,
+     "output": 1.4,
+     "reasoning": 4.2
+    },
+    "last_updated": "2025-04"
+   },
+   "qwen3-235b-a22b": {
+    "cost": {
+     "input": 0.7,
+     "output": 2.8,
+     "reasoning": 8.4
+    },
+    "last_updated": "2025-04"
+   },
+   "qwen3-32b": {
+    "cost": {
+     "input": 0.7,
+     "output": 2.8,
+     "reasoning": 8.4
+    },
+    "last_updated": "2025-04"
+   },
+   "qwen3-8b": {
+    "cost": {
+     "input": 0.18,
+     "output": 0.7,
+     "reasoning": 2.1
+    },
+    "last_updated": "2025-04"
+   },
+   "qwen3-asr-flash": {
+    "cost": {
+     "input": 0.035,
+     "output": 0.035
+    },
+    "last_updated": "2025-09-08"
+   },
+   "qwen3-coder-30b-a3b-instruct": {
+    "cost": {
+     "input": 0.45,
+     "output": 2.25
+    },
+    "last_updated": "2025-04"
+   },
+   "qwen3-coder-480b-a35b-instruct": {
+    "cost": {
+     "input": 1.5,
+     "output": 7.5
+    },
+    "last_updated": "2025-04"
+   },
+   "qwen3-coder-flash": {
+    "cost": {
+     "input": 0.3,
+     "output": 1.5
+    },
+    "last_updated": "2025-07-28"
+   },
+   "qwen3-coder-plus": {
+    "cost": {
+     "input": 1,
+     "output": 5
+    },
+    "last_updated": "2025-07-23"
+   },
+   "qwen3-livetranslate-flash-realtime": {
+    "cost": {
+     "input": 10,
+     "input_audio": 10,
+     "output": 10,
+     "output_audio": 38
+    },
+    "last_updated": "2025-09-22"
+   },
+   "qwen3-max": {
+    "cost": {
+     "input": 1.2,
+     "output": 6
+    },
+    "last_updated": "2025-09-23"
+   },
+   "qwen3-next-80b-a3b-instruct": {
+    "cost": {
+     "input": 0.5,
+     "output": 2
+    },
+    "last_updated": "2025-09"
+   },
+   "qwen3-next-80b-a3b-thinking": {
+    "cost": {
+     "input": 0.5,
+     "output": 6
+    },
+    "last_updated": "2025-09"
+   },
+   "qwen3-omni-flash": {
+    "cost": {
+     "input": 0.43,
+     "input_audio": 3.81,
+     "output": 1.66,
+     "output_audio": 15.11
+    },
+    "last_updated": "2025-09-15"
+   },
+   "qwen3-omni-flash-realtime": {
+    "cost": {
+     "input": 0.52,
+     "input_audio": 4.57,
+     "output": 1.99,
+     "output_audio": 18.13
+    },
+    "last_updated": "2025-09-15"
+   },
+   "qwen3-vl-235b-a22b": {
+    "cost": {
+     "input": 0.7,
+     "output": 2.8,
+     "reasoning": 8.4
+    },
+    "last_updated": "2025-04"
+   },
+   "qwen3-vl-30b-a3b": {
+    "cost": {
+     "input": 0.2,
+     "output": 0.8,
+     "reasoning": 2.4
+    },
+    "last_updated": "2025-04"
+   },
+   "qwen3-vl-plus": {
+    "cost": {
+     "input": 0.2,
+     "output": 1.6,
+     "reasoning": 4.8
+    },
+    "last_updated": "2025-09-23"
+   },
+   "qwen3.5-122b-a10b": {
+    "cost": {
+     "input": 0.4,
+     "output": 3.2
+    },
+    "last_updated": "2026-02-23"
+   },
+   "qwen3.5-27b": {
+    "cost": {
+     "input": 0.3,
+     "output": 2.4
+    },
+    "last_updated": "2026-02-23"
+   },
+   "qwen3.5-35b-a3b": {
+    "cost": {
+     "input": 0.25,
+     "output": 2
+    },
+    "last_updated": "2026-02-23"
+   },
+   "qwen3.5-397b-a17b": {
+    "cost": {
+     "input": 0.6,
+     "output": 3.6
+    },
+    "last_updated": "2026-02-15"
+   },
+   "qwen3.5-plus": {
+    "cost": {
+     "input": 0.4,
+     "output": 2.4,
+     "reasoning": 2.4
+    },
+    "last_updated": "2026-02-16"
+   },
+   "qwen3.6-27b": {
+    "cost": {
+     "input": 0.6,
+     "output": 3.6
+    },
+    "last_updated": "2026-04-22"
+   },
+   "qwen3.6-35b-a3b": {
+    "cost": {
+     "input": 0.248,
+     "output": 1.485
+    },
+    "last_updated": "2026-04-17"
+   },
+   "qwen3.6-flash": {
+    "cost": {
+     "cache_write": 0.234375,
+     "input": 0.1875,
+     "output": 1.125
+    },
+    "last_updated": "2026-04-27"
+   },
+   "qwen3.6-max-preview": {
+    "cost": {
+     "cache_read": 0.13,
+     "cache_write": 1.625,
+     "input": 1.3,
+     "output": 7.8
+    },
+    "last_updated": "2026-04-20"
+   },
+   "qwen3.6-plus": {
+    "cost": {
+     "cache_read": 0.05,
+     "cache_write": 0.625,
+     "context_over_200k": {
+      "cache_read": 0.2,
+      "cache_write": 2.5,
+      "input": 2,
+      "output": 6
+     },
+     "input": 0.5,
+     "output": 3,
+     "tiers": [
+      {
+       "cache_read": 0.2,
+       "cache_write": 2.5,
+       "input": 2,
+       "output": 6,
+       "tier": {
+        "size": 256000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-04-02"
+   },
+   "qwen3.7-max": {
+    "cost": {
+     "cache_read": 0.5,
+     "cache_write": 3.125,
+     "input": 2.5,
+     "output": 7.5
+    },
+    "last_updated": "2026-05-21"
+   },
+   "qwen3.7-plus": {
+    "cost": {
+     "cache_read": 0.05,
+     "cache_write": 0.625,
+     "context_over_200k": {
+      "cache_read": 0.2,
+      "cache_write": 2.5,
+      "input": 2,
+      "output": 6
+     },
+     "input": 0.5,
+     "output": 3,
+     "tiers": [
+      {
+       "cache_read": 0.2,
+       "cache_write": 2.5,
+       "input": 2,
+       "output": 6,
+       "tier": {
+        "size": 256000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-06-04"
+   },
+   "qwen3.8-max": {
+    "cost": {
+     "cache_read": 0.25,
+     "cache_write": 2.5,
+     "input": 2,
+     "output": 6
+    },
+    "last_updated": "2026-08-03"
+   },
+   "qwq-plus": {
+    "cost": {
+     "input": 0.8,
+     "output": 2.4
+    },
+    "last_updated": "2025-03-05"
+   }
+  },
+  "name": "Alibaba"
+ },
+ "alibaba-cn": {
+  "api": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "models": {
+   "MiniMax-M2.5": {
+    "cost": {
+     "input": 0.3,
+     "output": 1.2
+    },
+    "last_updated": "2026-02-12"
+   },
+   "MiniMax/MiniMax-M2.7": {
+    "cost": {
+     "cache_read": 0.06,
+     "cache_write": 0.375,
+     "input": 0.3,
+     "output": 1.2
+    },
+    "last_updated": "2026-03-18"
+   },
+   "deepseek-r1": {
+    "cost": {
+     "input": 0.574,
+     "output": 2.294
+    },
+    "last_updated": "2025-01-01"
+   },
+   "deepseek-r1-0528": {
+    "cost": {
+     "input": 0.574,
+     "output": 2.294
+    },
+    "last_updated": "2025-05-28"
+   },
+   "deepseek-r1-distill-llama-70b": {
+    "cost": {
+     "input": 0.287,
+     "output": 0.861
+    },
+    "last_updated": "2025-01-01"
+   },
+   "deepseek-r1-distill-llama-8b": {
+    "cost": {
+     "input": 0,
+     "output": 0
+    },
+    "last_updated": "2025-01-01"
+   },
+   "deepseek-r1-distill-qwen-1-5b": {
+    "cost": {
+     "input": 0,
+     "output": 0
+    },
+    "last_updated": "2025-01-01"
+   },
+   "deepseek-r1-distill-qwen-14b": {
+    "cost": {
+     "input": 0.144,
+     "output": 0.431
+    },
+    "last_updated": "2025-01-01"
+   },
+   "deepseek-r1-distill-qwen-32b": {
+    "cost": {
+     "input": 0.287,
+     "output": 0.861
+    },
+    "last_updated": "2025-01-01"
+   },
+   "deepseek-r1-distill-qwen-7b": {
+    "cost": {
+     "input": 0.072,
+     "output": 0.144
+    },
+    "last_updated": "2025-01-01"
+   },
+   "deepseek-v3": {
+    "cost": {
+     "input": 0.287,
+     "output": 1.147
+    },
+    "last_updated": "2024-12-01"
+   },
+   "deepseek-v3-1": {
+    "cost": {
+     "input": 0.574,
+     "output": 1.721
+    },
+    "last_updated": "2025-01-01"
+   },
+   "deepseek-v3-2-exp": {
+    "cost": {
+     "input": 0.287,
+     "output": 0.431
+    },
+    "last_updated": "2025-01-01"
+   },
+   "deepseek-v4-flash": {
+    "cost": {
+     "cache_read": 0.0028,
+     "input": 0.14,
+     "output": 0.28
+    },
+    "last_updated": "2026-04-24"
+   },
+   "deepseek-v4-pro": {
+    "cost": {
+     "cache_read": 0.003625,
+     "input": 0.435,
+     "output": 0.87
+    },
+    "last_updated": "2026-04-24"
+   },
+   "glm-5": {
+    "cost": {
+     "input": 0.86,
+     "output": 3.15
+    },
+    "last_updated": "2026-02-11"
+   },
+   "glm-5.1": {
+    "cost": {
+     "cache_read": 0.17,
+     "input": 0.87,
+     "output": 3.48
+    },
+    "last_updated": "2026-04-14"
+   },
+   "glm-5.2": {
+    "cost": {
+     "cache_read": 0.275,
+     "cache_write": 0,
+     "input": 1.1,
+     "output": 3.851
+    },
+    "last_updated": "2026-06-13"
+   },
+   "kimi-k2-thinking": {
+    "cost": {
+     "input": 0.574,
+     "output": 2.294
+    },
+    "last_updated": "2025-11-06"
+   },
+   "kimi-k2.5": {
+    "cost": {
+     "input": 0.574,
+     "output": 2.411
+    },
+    "last_updated": "2026-01-27"
+   },
+   "kimi-k2.6": {
+    "cost": {
+     "input": 0.929,
+     "output": 3.858
+    },
+    "last_updated": "2026-04-21"
+   },
+   "kimi/kimi-k2.5": {
+    "cost": {
+     "cache_read": 0.1,
+     "input": 0.6,
+     "output": 3
+    },
+    "last_updated": "2026-01-27"
+   },
+   "moonshot-kimi-k2-instruct": {
+    "cost": {
+     "input": 0.574,
+     "output": 2.294
+    },
+    "last_updated": "2025-01-01"
+   },
+   "qvq-max": {
+    "cost": {
+     "input": 1.147,
+     "output": 4.588
+    },
+    "last_updated": "2025-03-25"
+   },
+   "qwen-deep-research": {
+    "cost": {
+     "input": 7.742,
+     "output": 23.367
+    },
+    "last_updated": "2024-01"
+   },
+   "qwen-doc-turbo": {
+    "cost": {
+     "input": 0.087,
+     "output": 0.144
+    },
+    "last_updated": "2024-01"
+   },
+   "qwen-flash": {
+    "cost": {
+     "input": 0.022,
+     "output": 0.216
+    },
+    "last_updated": "2025-07-28"
+   },
+   "qwen-long": {
+    "cost": {
+     "input": 0.072,
+     "output": 0.287
+    },
+    "last_updated": "2025-01-25"
+   },
+   "qwen-math-plus": {
+    "cost": {
+     "input": 0.574,
+     "output": 1.721
+    },
+    "last_updated": "2024-09-19"
+   },
+   "qwen-math-turbo": {
+    "cost": {
+     "input": 0.287,
+     "output": 0.861
+    },
+    "last_updated": "2024-09-19"
+   },
+   "qwen-max": {
+    "cost": {
+     "input": 0.345,
+     "output": 1.377
+    },
+    "last_updated": "2025-01-25"
+   },
+   "qwen-mt-plus": {
+    "cost": {
+     "input": 0.259,
+     "output": 0.775
+    },
+    "last_updated": "2025-01"
+   },
+   "qwen-mt-turbo": {
+    "cost": {
+     "input": 0.101,
+     "output": 0.28
+    },
+    "last_updated": "2025-01"
+   },
+   "qwen-omni-turbo": {
+    "cost": {
+     "input": 0.058,
+     "input_audio": 3.584,
+     "output": 0.23,
+     "output_audio": 7.168
+    },
+    "last_updated": "2025-03-26"
+   },
+   "qwen-omni-turbo-realtime": {
+    "cost": {
+     "input": 0.23,
+     "input_audio": 3.584,
+     "output": 0.918,
+     "output_audio": 7.168
+    },
+    "last_updated": "2025-05-08"
+   },
+   "qwen-plus": {
+    "cost": {
+     "input": 0.115,
+     "output": 0.287,
+     "reasoning": 1.147
+    },
+    "last_updated": "2025-09-11"
+   },
+   "qwen-plus-character": {
+    "cost": {
+     "input": 0.115,
+     "output": 0.287
+    },
+    "last_updated": "2024-01"
+   },
+   "qwen-turbo": {
+    "cost": {
+     "input": 0.044,
+     "output": 0.087,
+     "reasoning": 0.431
+    },
+    "last_updated": "2025-07-15"
+   },
+   "qwen-vl-max": {
+    "cost": {
+     "input": 0.23,
+     "output": 0.574
+    },
+    "last_updated": "2025-08-13"
+   },
+   "qwen-vl-ocr": {
+    "cost": {
+     "input": 0.717,
+     "output": 0.717
+    },
+    "last_updated": "2025-04-13"
+   },
+   "qwen-vl-plus": {
+    "cost": {
+     "input": 0.115,
+     "output": 0.287
+    },
+    "last_updated": "2025-08-15"
+   },
+   "qwen2-5-14b-instruct": {
+    "cost": {
+     "input": 0.144,
+     "output": 0.431
+    },
+    "last_updated": "2024-09"
+   },
+   "qwen2-5-32b-instruct": {
+    "cost": {
+     "input": 0.287,
+     "output": 0.861
+    },
+    "last_updated": "2024-09"
+   },
+   "qwen2-5-72b-instruct": {
+    "cost": {
+     "input": 0.574,
+     "output": 1.721
+    },
+    "last_updated": "2024-09"
+   },
+   "qwen2-5-7b-instruct": {
+    "cost": {
+     "input": 0.072,
+     "output": 0.144
+    },
+    "last_updated": "2024-09"
+   },
+   "qwen2-5-coder-32b-instruct": {
+    "cost": {
+     "input": 0.287,
+     "output": 0.861
+    },
+    "last_updated": "2024-11"
+   },
+   "qwen2-5-coder-7b-instruct": {
+    "cost": {
+     "input": 0.144,
+     "output": 0.287
+    },
+    "last_updated": "2024-11"
+   },
+   "qwen2-5-math-72b-instruct": {
+    "cost": {
+     "input": 0.574,
+     "output": 1.721
+    },
+    "last_updated": "2024-09"
+   },
+   "qwen2-5-math-7b-instruct": {
+    "cost": {
+     "input": 0.144,
+     "output": 0.287
+    },
+    "last_updated": "2024-09"
+   },
+   "qwen2-5-omni-7b": {
+    "cost": {
+     "input": 0.087,
+     "input_audio": 5.448,
+     "output": 0.345
+    },
+    "last_updated": "2024-12"
+   },
+   "qwen2-5-vl-72b-instruct": {
+    "cost": {
+     "input": 2.294,
+     "output": 6.881
+    },
+    "last_updated": "2024-09"
+   },
+   "qwen2-5-vl-7b-instruct": {
+    "cost": {
+     "input": 0.287,
+     "output": 0.717
+    },
+    "last_updated": "2024-09"
+   },
+   "qwen3-14b": {
+    "cost": {
+     "input": 0.144,
+     "output": 0.574,
+     "reasoning": 1.434
+    },
+    "last_updated": "2025-04"
+   },
+   "qwen3-235b-a22b": {
+    "cost": {
+     "input": 0.287,
+     "output": 1.147,
+     "reasoning": 2.868
+    },
+    "last_updated": "2025-04"
+   },
+   "qwen3-32b": {
+    "cost": {
+     "input": 0.287,
+     "output": 1.147,
+     "reasoning": 2.868
+    },
+    "last_updated": "2025-04"
+   },
+   "qwen3-8b": {
+    "cost": {
+     "input": 0.072,
+     "output": 0.287,
+     "reasoning": 0.717
+    },
+    "last_updated": "2025-04"
+   },
+   "qwen3-asr-flash": {
+    "cost": {
+     "input": 0.032,
+     "output": 0.032
+    },
+    "last_updated": "2025-09-08"
+   },
+   "qwen3-coder-30b-a3b-instruct": {
+    "cost": {
+     "input": 0.216,
+     "output": 0.861
+    },
+    "last_updated": "2025-04"
+   },
+   "qwen3-coder-480b-a35b-instruct": {
+    "cost": {
+     "input": 0.861,
+     "output": 3.441
+    },
+    "last_updated": "2025-04"
+   },
+   "qwen3-coder-flash": {
+    "cost": {
+     "input": 0.144,
+     "output": 0.574
+    },
+    "last_updated": "2025-07-28"
+   },
+   "qwen3-coder-plus": {
+    "cost": {
+     "input": 1,
+     "output": 5
+    },
+    "last_updated": "2025-07-23"
+   },
+   "qwen3-max": {
+    "cost": {
+     "input": 0.861,
+     "output": 3.441
+    },
+    "last_updated": "2025-09-23"
+   },
+   "qwen3-next-80b-a3b-instruct": {
+    "cost": {
+     "input": 0.144,
+     "output": 0.574
+    },
+    "last_updated": "2025-09"
+   },
+   "qwen3-next-80b-a3b-thinking": {
+    "cost": {
+     "input": 0.144,
+     "output": 1.434
+    },
+    "last_updated": "2025-09"
+   },
+   "qwen3-omni-flash": {
+    "cost": {
+     "input": 0.058,
+     "input_audio": 3.584,
+     "output": 0.23,
+     "output_audio": 7.168
+    },
+    "last_updated": "2025-09-15"
+   },
+   "qwen3-omni-flash-realtime": {
+    "cost": {
+     "input": 0.23,
+     "input_audio": 3.584,
+     "output": 0.918,
+     "output_audio": 7.168
+    },
+    "last_updated": "2025-09-15"
+   },
+   "qwen3-vl-235b-a22b": {
+    "cost": {
+     "input": 0.286705,
+     "output": 1.14682,
+     "reasoning": 2.867051
+    },
+    "last_updated": "2025-04"
+   },
+   "qwen3-vl-30b-a3b": {
+    "cost": {
+     "input": 0.108,
+     "output": 0.431,
+     "reasoning": 1.076
+    },
+    "last_updated": "2025-04"
+   },
+   "qwen3-vl-plus": {
+    "cost": {
+     "input": 0.143353,
+     "output": 1.433525,
+     "reasoning": 4.300576
+    },
+    "last_updated": "2025-09-23"
+   },
+   "qwen3.5-397b-a17b": {
+    "cost": {
+     "input": 0.43,
+     "output": 2.58,
+     "reasoning": 2.58
+    },
+    "last_updated": "2026-02-16"
+   },
+   "qwen3.5-flash": {
+    "cost": {
+     "input": 0.172,
+     "output": 1.72,
+     "reasoning": 1.72
+    },
+    "last_updated": "2026-02-23"
+   },
+   "qwen3.5-plus": {
+    "cost": {
+     "input": 0.573,
+     "output": 3.44,
+     "reasoning": 3.44
+    },
+    "last_updated": "2026-02-16"
+   },
+   "qwen3.6-flash": {
+    "cost": {
+     "cache_write": 0.234375,
+     "input": 0.1875,
+     "output": 1.125
+    },
+    "last_updated": "2026-04-27"
+   },
+   "qwen3.6-max-preview": {
+    "cost": {
+     "cache_read": 0.132,
+     "input": 1.32,
+     "output": 7.9
+    },
+    "last_updated": "2026-04-21"
+   },
+   "qwen3.6-plus": {
+    "cost": {
+     "cache_read": 0.05,
+     "cache_write": 0.625,
+     "context_over_200k": {
+      "cache_read": 0.2,
+      "cache_write": 2.5,
+      "input": 2,
+      "output": 6
+     },
+     "input": 0.5,
+     "output": 3,
+     "tiers": [
+      {
+       "cache_read": 0.2,
+       "cache_write": 2.5,
+       "input": 2,
+       "output": 6,
+       "tier": {
+        "size": 256000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-04-02"
+   },
+   "qwen3.7-flash": {
+    "cost": {
+     "cache_read": 0.002962,
+     "cache_write": 0.03703,
+     "input": 0.02962,
+     "output": 0.1185,
+     "tiers": [
+      {
+       "cache_read": 0.008887,
+       "cache_write": 0.11109,
+       "input": 0.08887,
+       "output": 0.35549,
+       "tier": {
+        "size": 32000,
+        "type": "context"
+       }
+      },
+      {
+       "cache_read": 0.017774,
+       "cache_write": 0.22218,
+       "input": 0.17774,
+       "output": 0.71098,
+       "tier": {
+        "size": 256000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-07-15"
+   },
+   "qwen3.7-max": {
+    "cost": {
+     "cache_read": 0.5,
+     "cache_write": 3.125,
+     "input": 2.5,
+     "output": 7.5
+    },
+    "last_updated": "2026-05-21"
+   },
+   "qwen3.7-plus": {
+    "cost": {
+     "cache_read": 0.05,
+     "cache_write": 0.625,
+     "input": 0.5,
+     "output": 3,
+     "tiers": [
+      {
+       "cache_read": 0.2,
+       "cache_write": 2.5,
+       "input": 2,
+       "output": 6,
+       "tier": {
+        "size": 128000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-06-02"
+   },
+   "qwen3.8-max": {
+    "cost": {
+     "cache_read": 0.22218,
+     "cache_write": 2.22179,
+     "input": 1.77744,
+     "output": 5.33231
+    },
+    "last_updated": "2026-08-03"
+   },
+   "qwq-32b": {
+    "cost": {
+     "input": 0.287,
+     "output": 0.861
+    },
+    "last_updated": "2024-12"
+   },
+   "qwq-plus": {
+    "cost": {
+     "input": 0.23,
+     "output": 0.574
+    },
+    "last_updated": "2025-03-05"
+   },
+   "siliconflow/deepseek-r1-0528": {
+    "cost": {
+     "input": 0.5,
+     "output": 2.18
+    },
+    "last_updated": "2025-11-25"
+   },
+   "siliconflow/deepseek-v3-0324": {
+    "cost": {
+     "input": 0.25,
+     "output": 1
+    },
+    "last_updated": "2025-11-25"
+   },
+   "siliconflow/deepseek-v3.1-terminus": {
+    "cost": {
+     "input": 0.27,
+     "output": 1
+    },
+    "last_updated": "2025-11-25"
+   },
+   "siliconflow/deepseek-v3.2": {
+    "cost": {
+     "input": 0.27,
+     "output": 0.42
+    },
+    "last_updated": "2025-12-03"
+   },
+   "tongyi-intent-detect-v3": {
+    "cost": {
+     "input": 0.058,
+     "output": 0.144
+    },
+    "last_updated": "2024-01"
+   }
+  },
+  "name": "Alibaba (China)"
+ },
+ "anthropic": {
+  "api": null,
+  "models": {
+   "claude-fable-5": {
+    "cost": {
+     "cache_read": 1,
+     "cache_write": 12.5,
+     "input": 10,
+     "output": 50
+    },
+    "last_updated": "2026-06-09"
+   },
+   "claude-haiku-4-5": {
+    "cost": {
+     "cache_read": 0.1,
+     "cache_write": 1.25,
+     "input": 1,
+     "output": 5
+    },
+    "last_updated": "2025-10-15"
+   },
+   "claude-haiku-4-5-20251001": {
+    "cost": {
+     "cache_read": 0.1,
+     "cache_write": 1.25,
+     "input": 1,
+     "output": 5
+    },
+    "last_updated": "2025-10-15"
+   },
+   "claude-opus-4-5": {
+    "cost": {
+     "cache_read": 0.5,
+     "cache_write": 6.25,
+     "input": 5,
+     "output": 25
+    },
+    "last_updated": "2025-11-24"
+   },
+   "claude-opus-4-5-20251101": {
+    "cost": {
+     "cache_read": 0.5,
+     "cache_write": 6.25,
+     "input": 5,
+     "output": 25
+    },
+    "last_updated": "2025-11-01"
+   },
+   "claude-opus-4-6": {
+    "cost": {
+     "cache_read": 0.5,
+     "cache_write": 6.25,
+     "input": 5,
+     "output": 25
+    },
+    "last_updated": "2026-03-13"
+   },
+   "claude-opus-4-7": {
+    "cost": {
+     "cache_read": 0.5,
+     "cache_write": 6.25,
+     "input": 5,
+     "output": 25
+    },
+    "last_updated": "2026-04-16"
+   },
+   "claude-opus-4-8": {
+    "cost": {
+     "cache_read": 0.5,
+     "cache_write": 6.25,
+     "input": 5,
+     "output": 25
+    },
+    "last_updated": "2026-05-28"
+   },
+   "claude-opus-5": {
+    "cost": {
+     "cache_read": 0.5,
+     "cache_write": 6.25,
+     "input": 5,
+     "output": 25
+    },
+    "last_updated": "2026-07-24"
+   },
+   "claude-sonnet-4-5": {
+    "cost": {
+     "cache_read": 0.3,
+     "cache_write": 3.75,
+     "input": 3,
+     "output": 15
+    },
+    "last_updated": "2025-09-29"
+   },
+   "claude-sonnet-4-5-20250929": {
+    "cost": {
+     "cache_read": 0.3,
+     "cache_write": 3.75,
+     "input": 3,
+     "output": 15
+    },
+    "last_updated": "2025-09-29"
+   },
+   "claude-sonnet-4-6": {
+    "cost": {
+     "cache_read": 0.3,
+     "cache_write": 3.75,
+     "input": 3,
+     "output": 15
+    },
+    "last_updated": "2026-03-13"
+   },
+   "claude-sonnet-5": {
+    "cost": {
+     "cache_read": 0.2,
+     "cache_write": 2.5,
+     "input": 2,
+     "output": 10
+    },
+    "last_updated": "2026-06-30"
+   }
+  },
+  "name": "Anthropic"
+ },
+ "cohere": {
+  "api": null,
+  "models": {
+   "c4ai-aya-expanse-32b": {
+    "cost": null,
+    "last_updated": "2024-10-24"
+   },
+   "c4ai-aya-expanse-8b": {
+    "cost": null,
+    "last_updated": "2024-10-24"
+   },
+   "c4ai-aya-vision-32b": {
+    "cost": null,
+    "last_updated": "2025-05-14"
+   },
+   "c4ai-aya-vision-8b": {
+    "cost": null,
+    "last_updated": "2025-05-14"
+   },
+   "command-a-03-2025": {
+    "cost": {
+     "input": 2.5,
+     "output": 10
+    },
+    "last_updated": "2025-03-13"
+   },
+   "command-a-plus-05-2026": {
+    "cost": {
+     "input": 2.5,
+     "output": 10
+    },
+    "last_updated": "2026-06-09"
+   },
+   "command-a-reasoning-08-2025": {
+    "cost": {
+     "input": 2.5,
+     "output": 10
+    },
+    "last_updated": "2025-08-21"
+   },
+   "command-a-translate-08-2025": {
+    "cost": {
+     "input": 2.5,
+     "output": 10
+    },
+    "last_updated": "2025-08-28"
+   },
+   "command-a-vision-07-2025": {
+    "cost": {
+     "input": 2.5,
+     "output": 10
+    },
+    "last_updated": "2025-07-31"
+   },
+   "command-r-08-2024": {
+    "cost": {
+     "input": 0.15,
+     "output": 0.6
+    },
+    "last_updated": "2024-08-30"
+   },
+   "command-r-plus-08-2024": {
+    "cost": {
+     "input": 2.5,
+     "output": 10
+    },
+    "last_updated": "2024-08-30"
+   },
+   "command-r7b-12-2024": {
+    "cost": {
+     "input": 0.0375,
+     "output": 0.15
+    },
+    "last_updated": "2024-12-02"
+   },
+   "command-r7b-arabic-02-2025": {
+    "cost": {
+     "input": 0.0375,
+     "output": 0.15
+    },
+    "last_updated": "2025-02-27"
+   },
+   "north-mini-code-1-0": {
+    "cost": {
+     "input": 0,
+     "output": 0
+    },
+    "last_updated": "2026-06-09"
+   }
+  },
+  "name": "Cohere"
+ },
+ "deepseek": {
+  "api": "https://api.deepseek.com",
+  "models": {
+   "deepseek-chat": {
+    "cost": {
+     "cache_read": 0.0028,
+     "input": 0.14,
+     "output": 0.28
+    },
+    "last_updated": "2026-02-28"
+   },
+   "deepseek-reasoner": {
+    "cost": {
+     "cache_read": 0.0028,
+     "input": 0.14,
+     "output": 0.28,
+     "reasoning": 0.28
+    },
+    "last_updated": "2026-02-28"
+   },
+   "deepseek-v4-flash": {
+    "cost": {
+     "cache_read": 0.0028,
+     "input": 0.14,
+     "output": 0.28,
+     "reasoning": 0.28
+    },
+    "last_updated": "2026-07-31"
+   },
+   "deepseek-v4-pro": {
+    "cost": {
+     "cache_read": 0.003625,
+     "input": 0.435,
+     "output": 0.87,
+     "reasoning": 0.87
+    },
+    "last_updated": "2026-04-24"
+   }
+  },
+  "name": "DeepSeek"
+ },
+ "google": {
+  "api": null,
+  "models": {
+   "deep-research-max-preview-04-2026": {
+    "cost": {
+     "cache_read": 0.2,
+     "context_over_200k": {
+      "cache_read": 0.4,
+      "input": 4,
+      "output": 18
+     },
+     "input": 2,
+     "output": 12,
+     "tiers": [
+      {
+       "cache_read": 0.4,
+       "input": 4,
+       "output": 18,
+       "tier": {
+        "size": 200000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-04-21"
+   },
+   "deep-research-preview-04-2026": {
+    "cost": {
+     "cache_read": 0.2,
+     "context_over_200k": {
+      "cache_read": 0.4,
+      "input": 4,
+      "output": 18
+     },
+     "input": 2,
+     "output": 12,
+     "tiers": [
+      {
+       "cache_read": 0.4,
+       "input": 4,
+       "output": 18,
+       "tier": {
+        "size": 200000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-04-21"
+   },
+   "gemini-2.0-flash": {
+    "cost": {
+     "cache_read": 0.025,
+     "input": 0.1,
+     "output": 0.4
+    },
+    "last_updated": "2024-12-11"
+   },
+   "gemini-2.0-flash-lite": {
+    "cost": {
+     "input": 0.075,
+     "output": 0.3
+    },
+    "last_updated": "2024-12-11"
+   },
+   "gemini-2.5-computer-use-preview-10-2025": {
+    "cost": {
+     "context_over_200k": {
+      "input": 2.5,
+      "output": 15
+     },
+     "input": 1.25,
+     "output": 10,
+     "tiers": [
+      {
+       "input": 2.5,
+       "output": 15,
+       "tier": {
+        "size": 200000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2025-10-07"
+   },
+   "gemini-2.5-flash": {
+    "cost": {
+     "cache_read": 0.03,
+     "input": 0.3,
+     "input_audio": 1,
+     "output": 2.5
+    },
+    "last_updated": "2025-06-17"
+   },
+   "gemini-2.5-flash-image": {
+    "cost": {
+     "cache_read": 0.075,
+     "input": 0.3,
+     "output": 30
+    },
+    "last_updated": "2025-08-26"
+   },
+   "gemini-2.5-flash-lite": {
+    "cost": {
+     "cache_read": 0.01,
+     "input": 0.1,
+     "input_audio": 0.3,
+     "output": 0.4
+    },
+    "last_updated": "2025-06-17"
+   },
+   "gemini-2.5-flash-preview-tts": {
+    "cost": {
+     "input": 0.5,
+     "output": 10
+    },
+    "last_updated": "2025-05-01"
+   },
+   "gemini-2.5-pro": {
+    "cost": {
+     "cache_read": 0.125,
+     "context_over_200k": {
+      "cache_read": 0.25,
+      "input": 2.5,
+      "output": 15
+     },
+     "input": 1.25,
+     "output": 10,
+     "tiers": [
+      {
+       "cache_read": 0.25,
+       "input": 2.5,
+       "output": 15,
+       "tier": {
+        "size": 200000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2025-06-17"
+   },
+   "gemini-2.5-pro-preview-tts": {
+    "cost": {
+     "input": 1,
+     "output": 20
+    },
+    "last_updated": "2025-05-01"
+   },
+   "gemini-3-flash-preview": {
+    "cost": {
+     "cache_read": 0.05,
+     "input": 0.5,
+     "input_audio": 1,
+     "output": 3
+    },
+    "last_updated": "2025-12-17"
+   },
+   "gemini-3-pro-image": {
+    "cost": {
+     "input": 2,
+     "output": 120
+    },
+    "last_updated": "2026-05-28"
+   },
+   "gemini-3-pro-image-preview": {
+    "cost": {
+     "input": 2,
+     "output": 120
+    },
+    "last_updated": "2025-11-20"
+   },
+   "gemini-3-pro-preview": {
+    "cost": {
+     "cache_read": 0.2,
+     "context_over_200k": {
+      "cache_read": 0.4,
+      "input": 4,
+      "output": 18
+     },
+     "input": 2,
+     "output": 12,
+     "tiers": [
+      {
+       "cache_read": 0.4,
+       "input": 4,
+       "output": 18,
+       "tier": {
+        "size": 200000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2025-11-18"
+   },
+   "gemini-3.1-flash-image": {
+    "cost": {
+     "input": 0.5,
+     "output": 60
+    },
+    "last_updated": "2026-05-28"
+   },
+   "gemini-3.1-flash-image-preview": {
+    "cost": {
+     "input": 0.5,
+     "output": 60
+    },
+    "last_updated": "2026-02-26"
+   },
+   "gemini-3.1-flash-lite": {
+    "cost": {
+     "cache_read": 0.025,
+     "input": 0.25,
+     "input_audio": 0.5,
+     "output": 1.5
+    },
+    "last_updated": "2026-05-07"
+   },
+   "gemini-3.1-flash-lite-image": {
+    "cost": {
+     "input": 0.25,
+     "output": 30
+    },
+    "last_updated": "2026-06-30"
+   },
+   "gemini-3.1-flash-lite-preview": {
+    "cost": {
+     "cache_read": 0.025,
+     "input": 0.25,
+     "input_audio": 0.5,
+     "output": 1.5
+    },
+    "last_updated": "2026-03-03"
+   },
+   "gemini-3.1-flash-live-preview": {
+    "cost": {
+     "input": 0.75,
+     "input_audio": 3,
+     "output": 4.5,
+     "output_audio": 12
+    },
+    "last_updated": "2026-03-26"
+   },
+   "gemini-3.1-flash-tts-preview": {
+    "cost": {
+     "input": 1,
+     "output": 20
+    },
+    "last_updated": "2026-04-15"
+   },
+   "gemini-3.1-pro-preview": {
+    "cost": {
+     "cache_read": 0.2,
+     "context_over_200k": {
+      "cache_read": 0.4,
+      "input": 4,
+      "output": 18
+     },
+     "input": 2,
+     "output": 12,
+     "tiers": [
+      {
+       "cache_read": 0.4,
+       "input": 4,
+       "output": 18,
+       "tier": {
+        "size": 200000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-02-19"
+   },
+   "gemini-3.1-pro-preview-customtools": {
+    "cost": {
+     "cache_read": 0.2,
+     "context_over_200k": {
+      "cache_read": 0.4,
+      "input": 4,
+      "output": 18
+     },
+     "input": 2,
+     "output": 12,
+     "tiers": [
+      {
+       "cache_read": 0.4,
+       "input": 4,
+       "output": 18,
+       "tier": {
+        "size": 200000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-02-19"
+   },
+   "gemini-3.5-flash": {
+    "cost": {
+     "cache_read": 0.15,
+     "input": 1.5,
+     "input_audio": 1.5,
+     "output": 9
+    },
+    "last_updated": "2026-05-19"
+   },
+   "gemini-3.5-flash-lite": {
+    "cost": {
+     "cache_read": 0.03,
+     "input": 0.3,
+     "output": 2.5
+    },
+    "last_updated": "2026-07-21"
+   },
+   "gemini-3.5-live-translate-preview": {
+    "cost": {
+     "input": 3.5,
+     "input_audio": 3.5,
+     "output": 21,
+     "output_audio": 21
+    },
+    "last_updated": "2026-06-09"
+   },
+   "gemini-3.6-flash": {
+    "cost": {
+     "cache_read": 0.15,
+     "input": 1.5,
+     "input_audio": 1.5,
+     "output": 7.5
+    },
+    "last_updated": "2026-07-21"
+   },
+   "gemini-embedding-001": {
+    "cost": {
+     "input": 0.15,
+     "output": 0
+    },
+    "last_updated": "2025-05-20"
+   },
+   "gemini-embedding-2": {
+    "cost": {
+     "input": 0.2,
+     "input_audio": 6.5,
+     "output": 0
+    },
+    "last_updated": "2026-04-22"
+   },
+   "gemini-flash-latest": {
+    "cost": {
+     "cache_read": 0.15,
+     "input": 1.5,
+     "input_audio": 1.5,
+     "output": 9
+    },
+    "last_updated": "2026-05-19"
+   },
+   "gemini-flash-lite-latest": {
+    "cost": {
+     "cache_read": 0.025,
+     "input": 0.25,
+     "input_audio": 0.5,
+     "output": 1.5
+    },
+    "last_updated": "2026-05-07"
+   },
+   "gemini-omni-flash-preview": {
+    "cost": {
+     "input": 1.5,
+     "output": 17.5
+    },
+    "last_updated": "2026-06-30"
+   },
+   "gemini-robotics-er-1.6-preview": {
+    "cost": {
+     "input": 1,
+     "input_audio": 2,
+     "output": 5
+    },
+    "last_updated": "2026-04-14"
+   },
+   "gemma-4-26b-a4b-it": {
+    "cost": null,
+    "last_updated": "2026-04-02"
+   },
+   "gemma-4-31b-it": {
+    "cost": null,
+    "last_updated": "2026-04-02"
+   },
+   "lyria-3-clip-preview": {
+    "cost": {
+     "input": 0,
+     "output": 0
+    },
+    "last_updated": "2026-03-25"
+   },
+   "lyria-3-pro-preview": {
+    "cost": {
+     "input": 0,
+     "output": 0
+    },
+    "last_updated": "2026-03-25"
+   },
+   "veo-3.1-fast-generate-preview": {
+    "cost": null,
+    "last_updated": "2026-01-01"
+   },
+   "veo-3.1-generate-preview": {
+    "cost": null,
+    "last_updated": "2026-01"
+   },
+   "veo-3.1-lite-generate-preview": {
+    "cost": null,
+    "last_updated": "2026-03-31"
+   }
+  },
+  "name": "Google"
+ },
+ "meta": {
+  "api": "https://api.meta.ai/v1",
+  "models": {
+   "muse-spark-1.1": {
+    "cost": {
+     "cache_read": 0.15,
+     "input": 1.25,
+     "output": 4.25
+    },
+    "last_updated": "2026-07-09"
+   },
+   "muse-spark-1.2": {
+    "cost": {
+     "cache_read": 0.15,
+     "input": 1.25,
+     "output": 4.25
+    },
+    "last_updated": "2026-08-05"
+   },
+   "muse-spark-1.2-contributor": {
+    "cost": {
+     "cache_read": 0.002,
+     "input": 0.1,
+     "output": 0.2
+    },
+    "last_updated": "2026-08-05"
+   }
+  },
+  "name": "Meta"
+ },
+ "minimax": {
+  "api": "https://api.minimax.io/anthropic/v1",
+  "models": {
+   "MiniMax-M2": {
+    "cost": {
+     "input": 0.3,
+     "output": 1.2
+    },
+    "last_updated": "2025-10-27"
+   },
+   "MiniMax-M2.1": {
+    "cost": {
+     "cache_read": 0.03,
+     "cache_write": 0.375,
+     "input": 0.3,
+     "output": 1.2
+    },
+    "last_updated": "2025-12-23"
+   },
+   "MiniMax-M2.5": {
+    "cost": {
+     "cache_read": 0.03,
+     "cache_write": 0.375,
+     "input": 0.3,
+     "output": 1.2
+    },
+    "last_updated": "2026-02-12"
+   },
+   "MiniMax-M2.5-highspeed": {
+    "cost": {
+     "cache_read": 0.06,
+     "cache_write": 0.375,
+     "input": 0.6,
+     "output": 2.4
+    },
+    "last_updated": "2026-02-13"
+   },
+   "MiniMax-M2.7": {
+    "cost": {
+     "cache_read": 0.06,
+     "cache_write": 0.375,
+     "input": 0.3,
+     "output": 1.2
+    },
+    "last_updated": "2026-03-18"
+   },
+   "MiniMax-M2.7-highspeed": {
+    "cost": {
+     "cache_read": 0.06,
+     "cache_write": 0.375,
+     "input": 0.6,
+     "output": 2.4
+    },
+    "last_updated": "2026-03-18"
+   },
+   "MiniMax-M3": {
+    "cost": {
+     "cache_read": 0.06,
+     "context_over_200k": {
+      "cache_read": 0.12,
+      "input": 0.6,
+      "output": 2.4
+     },
+     "input": 0.3,
+     "output": 1.2,
+     "tiers": [
+      {
+       "cache_read": 0.12,
+       "input": 0.6,
+       "output": 2.4,
+       "tier": {
+        "size": 512000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-06-25"
+   }
+  },
+  "name": "MiniMax (minimax.io)"
+ },
+ "minimax-cn": {
+  "api": "https://api.minimaxi.com/anthropic/v1",
+  "models": {
+   "MiniMax-M2": {
+    "cost": {
+     "input": 0.3,
+     "output": 1.2
+    },
+    "last_updated": "2025-10-27"
+   },
+   "MiniMax-M2.1": {
+    "cost": {
+     "cache_read": 0.03,
+     "cache_write": 0.375,
+     "input": 0.3,
+     "output": 1.2
+    },
+    "last_updated": "2025-12-23"
+   },
+   "MiniMax-M2.5": {
+    "cost": {
+     "cache_read": 0.03,
+     "cache_write": 0.375,
+     "input": 0.3,
+     "output": 1.2
+    },
+    "last_updated": "2026-02-12"
+   },
+   "MiniMax-M2.5-highspeed": {
+    "cost": {
+     "cache_read": 0.06,
+     "cache_write": 0.375,
+     "input": 0.6,
+     "output": 2.4
+    },
+    "last_updated": "2026-02-13"
+   },
+   "MiniMax-M2.7": {
+    "cost": {
+     "cache_read": 0.06,
+     "cache_write": 0.375,
+     "input": 0.3,
+     "output": 1.2
+    },
+    "last_updated": "2026-03-18"
+   },
+   "MiniMax-M2.7-highspeed": {
+    "cost": {
+     "cache_read": 0.06,
+     "cache_write": 0.375,
+     "input": 0.6,
+     "output": 2.4
+    },
+    "last_updated": "2026-03-18"
+   },
+   "MiniMax-M3": {
+    "cost": {
+     "cache_read": 0.06,
+     "context_over_200k": {
+      "cache_read": 0.12,
+      "input": 0.6,
+      "output": 2.4
+     },
+     "input": 0.3,
+     "output": 1.2,
+     "tiers": [
+      {
+       "cache_read": 0.12,
+       "input": 0.6,
+       "output": 2.4,
+       "tier": {
+        "size": 512000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-06-25"
+   }
+  },
+  "name": "MiniMax (minimaxi.com)"
+ },
+ "mistral": {
+  "api": null,
+  "models": {
+   "codestral-latest": {
+    "cost": {
+     "input": 0.3,
+     "output": 0.9
+    },
+    "last_updated": "2025-01-04"
+   },
+   "devstral-2512": {
+    "cost": {
+     "input": 0.4,
+     "output": 2
+    },
+    "last_updated": "2025-12-09"
+   },
+   "devstral-latest": {
+    "cost": {
+     "input": 0.4,
+     "output": 2
+    },
+    "last_updated": "2025-12-09"
+   },
+   "devstral-medium-2507": {
+    "cost": {
+     "input": 0.4,
+     "output": 2
+    },
+    "last_updated": "2025-07-10"
+   },
+   "devstral-medium-latest": {
+    "cost": {
+     "input": 0.4,
+     "output": 2
+    },
+    "last_updated": "2025-12-02"
+   },
+   "devstral-small-2505": {
+    "cost": {
+     "input": 0.1,
+     "output": 0.3
+    },
+    "last_updated": "2025-05-07"
+   },
+   "devstral-small-2507": {
+    "cost": {
+     "input": 0.1,
+     "output": 0.3
+    },
+    "last_updated": "2025-07-10"
+   },
+   "labs-devstral-small-2512": {
+    "cost": {
+     "input": 0,
+     "output": 0
+    },
+    "last_updated": "2025-12-09"
+   },
+   "magistral-medium-latest": {
+    "cost": {
+     "input": 2,
+     "output": 5
+    },
+    "last_updated": "2025-03-20"
+   },
+   "magistral-small": {
+    "cost": {
+     "input": 0.5,
+     "output": 1.5
+    },
+    "last_updated": "2025-03-17"
+   },
+   "ministral-3b-latest": {
+    "cost": {
+     "input": 0.04,
+     "output": 0.04
+    },
+    "last_updated": "2024-10-04"
+   },
+   "ministral-8b-latest": {
+    "cost": {
+     "input": 0.1,
+     "output": 0.1
+    },
+    "last_updated": "2024-10-04"
+   },
+   "mistral-embed": {
+    "cost": {
+     "input": 0.1,
+     "output": 0
+    },
+    "last_updated": "2023-12-11"
+   },
+   "mistral-large-2411": {
+    "cost": {
+     "input": 2,
+     "output": 6
+    },
+    "last_updated": "2024-11-18"
+   },
+   "mistral-large-2512": {
+    "cost": {
+     "input": 0.5,
+     "output": 1.5
+    },
+    "last_updated": "2025-12-02"
+   },
+   "mistral-large-latest": {
+    "cost": {
+     "input": 0.5,
+     "output": 1.5
+    },
+    "last_updated": "2025-12-02"
+   },
+   "mistral-medium-2505": {
+    "cost": {
+     "input": 0.4,
+     "output": 2
+    },
+    "last_updated": "2025-05-07"
+   },
+   "mistral-medium-2508": {
+    "cost": {
+     "input": 0.4,
+     "output": 2
+    },
+    "last_updated": "2025-08-12"
+   },
+   "mistral-medium-2604": {
+    "cost": {
+     "input": 1.5,
+     "output": 7.5
+    },
+    "last_updated": "2026-04-29"
+   },
+   "mistral-medium-latest": {
+    "cost": {
+     "input": 1.5,
+     "output": 7.5
+    },
+    "last_updated": "2026-04-29"
+   },
+   "mistral-nemo": {
+    "cost": {
+     "input": 0.15,
+     "output": 0.15
+    },
+    "last_updated": "2024-07-01"
+   },
+   "mistral-small-2506": {
+    "cost": {
+     "input": 0.1,
+     "output": 0.3
+    },
+    "last_updated": "2025-06-20"
+   },
+   "mistral-small-2603": {
+    "cost": {
+     "input": 0.15,
+     "output": 0.6
+    },
+    "last_updated": "2026-03-16"
+   },
+   "mistral-small-latest": {
+    "cost": {
+     "input": 0.15,
+     "output": 0.6
+    },
+    "last_updated": "2026-03-16"
+   },
+   "open-mistral-7b": {
+    "cost": {
+     "input": 0.25,
+     "output": 0.25
+    },
+    "last_updated": "2023-09-27"
+   },
+   "open-mistral-nemo": {
+    "cost": {
+     "input": 0.15,
+     "output": 0.15
+    },
+    "last_updated": "2024-07-01"
+   },
+   "open-mixtral-8x22b": {
+    "cost": {
+     "input": 2,
+     "output": 6
+    },
+    "last_updated": "2024-04-17"
+   },
+   "open-mixtral-8x7b": {
+    "cost": {
+     "input": 0.7,
+     "output": 0.7
+    },
+    "last_updated": "2023-12-11"
+   },
+   "pixtral-12b": {
+    "cost": {
+     "input": 0.15,
+     "output": 0.15
+    },
+    "last_updated": "2024-09-01"
+   },
+   "pixtral-large-latest": {
+    "cost": {
+     "input": 2,
+     "output": 6
+    },
+    "last_updated": "2024-11-04"
+   },
+   "voxtral-mini-latest": {
+    "cost": null,
+    "last_updated": "2026-02-01"
+   },
+   "voxtral-mini-tts-latest": {
+    "cost": null,
+    "last_updated": "2026-03-01"
+   },
+   "voxtral-small-latest": {
+    "cost": {
+     "input": 0.1,
+     "output": 0.3
+    },
+    "last_updated": "2025-07-15"
+   }
+  },
+  "name": "Mistral"
+ },
+ "moonshotai": {
+  "api": "https://api.moonshot.ai/v1",
+  "models": {
+   "kimi-k2-0711-preview": {
+    "cost": {
+     "cache_read": 0.15,
+     "input": 0.6,
+     "output": 2.5
+    },
+    "last_updated": "2025-07-14"
+   },
+   "kimi-k2-0905-preview": {
+    "cost": {
+     "cache_read": 0.15,
+     "input": 0.6,
+     "output": 2.5
+    },
+    "last_updated": "2025-09-05"
+   },
+   "kimi-k2-thinking": {
+    "cost": {
+     "cache_read": 0.15,
+     "input": 0.6,
+     "output": 2.5
+    },
+    "last_updated": "2025-11-06"
+   },
+   "kimi-k2-thinking-turbo": {
+    "cost": {
+     "cache_read": 0.15,
+     "input": 1.15,
+     "output": 8
+    },
+    "last_updated": "2025-11-06"
+   },
+   "kimi-k2-turbo-preview": {
+    "cost": {
+     "cache_read": 0.6,
+     "input": 2.4,
+     "output": 10
+    },
+    "last_updated": "2025-09-05"
+   },
+   "kimi-k2.5": {
+    "cost": {
+     "cache_read": 0.1,
+     "input": 0.6,
+     "output": 3
+    },
+    "last_updated": "2026-01"
+   },
+   "kimi-k2.6": {
+    "cost": {
+     "cache_read": 0.16,
+     "input": 0.95,
+     "output": 4
+    },
+    "last_updated": "2026-04-21"
+   },
+   "kimi-k2.7-code": {
+    "cost": {
+     "cache_read": 0.19,
+     "input": 0.95,
+     "output": 4
+    },
+    "last_updated": "2026-06-12"
+   },
+   "kimi-k2.7-code-highspeed": {
+    "cost": {
+     "cache_read": 0.38,
+     "input": 1.9,
+     "output": 8
+    },
+    "last_updated": "2026-06-12"
+   },
+   "kimi-k3": {
+    "cost": {
+     "cache_read": 0.3,
+     "input": 3,
+     "output": 15
+    },
+    "last_updated": "2026-07-16"
+   }
+  },
+  "name": "Moonshot AI"
+ },
+ "openai": {
+  "api": null,
+  "models": {
+   "chatgpt-image-latest": {
+    "cost": null,
+    "last_updated": "2025-12-16"
+   },
+   "gpt-3.5-turbo": {
+    "cost": {
+     "cache_read": 0,
+     "input": 0.5,
+     "output": 1.5
+    },
+    "last_updated": "2023-11-06"
+   },
+   "gpt-4": {
+    "cost": {
+     "input": 30,
+     "output": 60
+    },
+    "last_updated": "2024-04-09"
+   },
+   "gpt-4-turbo": {
+    "cost": {
+     "input": 10,
+     "output": 30
+    },
+    "last_updated": "2024-04-09"
+   },
+   "gpt-4.1": {
+    "cost": {
+     "cache_read": 0.5,
+     "input": 2,
+     "output": 8
+    },
+    "last_updated": "2025-04-14"
+   },
+   "gpt-4.1-mini": {
+    "cost": {
+     "cache_read": 0.1,
+     "input": 0.4,
+     "output": 1.6
+    },
+    "last_updated": "2025-04-14"
+   },
+   "gpt-4.1-nano": {
+    "cost": {
+     "cache_read": 0.025,
+     "input": 0.1,
+     "output": 0.4
+    },
+    "last_updated": "2025-04-14"
+   },
+   "gpt-4o": {
+    "cost": {
+     "cache_read": 1.25,
+     "input": 2.5,
+     "output": 10
+    },
+    "last_updated": "2024-08-06"
+   },
+   "gpt-4o-2024-05-13": {
+    "cost": {
+     "input": 5,
+     "output": 15
+    },
+    "last_updated": "2024-05-13"
+   },
+   "gpt-4o-2024-08-06": {
+    "cost": {
+     "cache_read": 1.25,
+     "input": 2.5,
+     "output": 10
+    },
+    "last_updated": "2024-08-06"
+   },
+   "gpt-4o-2024-11-20": {
+    "cost": {
+     "cache_read": 1.25,
+     "input": 2.5,
+     "output": 10
+    },
+    "last_updated": "2024-11-20"
+   },
+   "gpt-4o-mini": {
+    "cost": {
+     "cache_read": 0.075,
+     "input": 0.15,
+     "output": 0.6
+    },
+    "last_updated": "2024-07-18"
+   },
+   "gpt-5": {
+    "cost": {
+     "cache_read": 0.125,
+     "input": 1.25,
+     "output": 10
+    },
+    "last_updated": "2025-08-07"
+   },
+   "gpt-5-mini": {
+    "cost": {
+     "cache_read": 0.025,
+     "input": 0.25,
+     "output": 2
+    },
+    "last_updated": "2025-08-07"
+   },
+   "gpt-5-nano": {
+    "cost": {
+     "cache_read": 0.005,
+     "input": 0.05,
+     "output": 0.4
+    },
+    "last_updated": "2025-08-07"
+   },
+   "gpt-5-pro": {
+    "cost": {
+     "input": 15,
+     "output": 120
+    },
+    "last_updated": "2025-10-06"
+   },
+   "gpt-5.1": {
+    "cost": {
+     "cache_read": 0.125,
+     "input": 1.25,
+     "output": 10
+    },
+    "last_updated": "2025-11-13"
+   },
+   "gpt-5.2": {
+    "cost": {
+     "cache_read": 0.175,
+     "input": 1.75,
+     "output": 14
+    },
+    "last_updated": "2025-12-11"
+   },
+   "gpt-5.2-chat-latest": {
+    "cost": {
+     "cache_read": 0.175,
+     "input": 1.75,
+     "output": 14
+    },
+    "last_updated": "2025-12-11"
+   },
+   "gpt-5.2-pro": {
+    "cost": {
+     "input": 21,
+     "output": 168
+    },
+    "last_updated": "2025-12-11"
+   },
+   "gpt-5.3-chat-latest": {
+    "cost": {
+     "cache_read": 0.175,
+     "input": 1.75,
+     "output": 14
+    },
+    "last_updated": "2026-03-03"
+   },
+   "gpt-5.3-codex": {
+    "cost": {
+     "cache_read": 0.175,
+     "input": 1.75,
+     "output": 14
+    },
+    "last_updated": "2026-02-05"
+   },
+   "gpt-5.3-codex-spark": {
+    "cost": {
+     "cache_read": 0.175,
+     "input": 1.75,
+     "output": 14
+    },
+    "last_updated": "2026-02-05"
+   },
+   "gpt-5.4": {
+    "cost": {
+     "cache_read": 0.25,
+     "context_over_200k": {
+      "cache_read": 0.5,
+      "input": 5,
+      "output": 22.5
+     },
+     "input": 2.5,
+     "output": 15,
+     "tiers": [
+      {
+       "cache_read": 0.5,
+       "input": 5,
+       "output": 22.5,
+       "tier": {
+        "size": 272000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-03-05"
+   },
+   "gpt-5.4-mini": {
+    "cost": {
+     "cache_read": 0.075,
+     "input": 0.75,
+     "output": 4.5
+    },
+    "last_updated": "2026-03-17"
+   },
+   "gpt-5.4-nano": {
+    "cost": {
+     "cache_read": 0.02,
+     "input": 0.2,
+     "output": 1.25
+    },
+    "last_updated": "2026-03-17"
+   },
+   "gpt-5.4-pro": {
+    "cost": {
+     "context_over_200k": {
+      "input": 60,
+      "output": 270
+     },
+     "input": 30,
+     "output": 180,
+     "tiers": [
+      {
+       "input": 60,
+       "output": 270,
+       "tier": {
+        "size": 272000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-03-05"
+   },
+   "gpt-5.5": {
+    "cost": {
+     "cache_read": 0.5,
+     "context_over_200k": {
+      "cache_read": 1,
+      "input": 10,
+      "output": 45
+     },
+     "input": 5,
+     "output": 30,
+     "tiers": [
+      {
+       "cache_read": 1,
+       "input": 10,
+       "output": 45,
+       "tier": {
+        "size": 272000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-04-23"
+   },
+   "gpt-5.5-pro": {
+    "cost": {
+     "context_over_200k": {
+      "input": 60,
+      "output": 270
+     },
+     "input": 30,
+     "output": 180,
+     "tiers": [
+      {
+       "input": 60,
+       "output": 270,
+       "tier": {
+        "size": 272000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-04-23"
+   },
+   "gpt-5.6": {
+    "cost": {
+     "cache_read": 0.5,
+     "cache_write": 6.25,
+     "context_over_200k": {
+      "cache_read": 1,
+      "cache_write": 12.5,
+      "input": 10,
+      "output": 45
+     },
+     "input": 5,
+     "output": 30,
+     "tiers": [
+      {
+       "cache_read": 1,
+       "cache_write": 12.5,
+       "input": 10,
+       "output": 45,
+       "tier": {
+        "size": 272000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-07-09"
+   },
+   "gpt-5.6-luna": {
+    "cost": {
+     "cache_read": 0.02,
+     "cache_write": 0.25,
+     "context_over_200k": {
+      "cache_read": 0.04,
+      "cache_write": 0.5,
+      "input": 0.4,
+      "output": 1.8
+     },
+     "input": 0.2,
+     "output": 1.2,
+     "tiers": [
+      {
+       "cache_read": 0.04,
+       "cache_write": 0.5,
+       "input": 0.4,
+       "output": 1.8,
+       "tier": {
+        "size": 272000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-07-09"
+   },
+   "gpt-5.6-sol": {
+    "cost": {
+     "cache_read": 0.5,
+     "cache_write": 6.25,
+     "context_over_200k": {
+      "cache_read": 1,
+      "cache_write": 12.5,
+      "input": 10,
+      "output": 45
+     },
+     "input": 5,
+     "output": 30,
+     "tiers": [
+      {
+       "cache_read": 1,
+       "cache_write": 12.5,
+       "input": 10,
+       "output": 45,
+       "tier": {
+        "size": 272000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-07-09"
+   },
+   "gpt-5.6-terra": {
+    "cost": {
+     "cache_read": 0.2,
+     "cache_write": 2.5,
+     "context_over_200k": {
+      "cache_read": 0.4,
+      "cache_write": 5,
+      "input": 4,
+      "output": 18
+     },
+     "input": 2,
+     "output": 12,
+     "tiers": [
+      {
+       "cache_read": 0.4,
+       "cache_write": 5,
+       "input": 4,
+       "output": 18,
+       "tier": {
+        "size": 272000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-07-09"
+   },
+   "gpt-image-1": {
+    "cost": null,
+    "last_updated": "2025-04-24"
+   },
+   "gpt-image-1-mini": {
+    "cost": null,
+    "last_updated": "2025-09-26"
+   },
+   "gpt-image-1.5": {
+    "cost": null,
+    "last_updated": "2025-11-25"
+   },
+   "gpt-image-2": {
+    "cost": {
+     "cache_read": 1.25,
+     "input": 5,
+     "output": 30
+    },
+    "last_updated": "2026-04-21"
+   },
+   "gpt-realtime-2.1": {
+    "cost": {
+     "cache_read": 0.4,
+     "input": 4,
+     "input_audio": 32,
+     "output": 24,
+     "output_audio": 64
+    },
+    "last_updated": "2026-07-06"
+   },
+   "o1": {
+    "cost": {
+     "cache_read": 7.5,
+     "input": 15,
+     "output": 60
+    },
+    "last_updated": "2024-12-05"
+   },
+   "o1-pro": {
+    "cost": {
+     "input": 150,
+     "output": 600
+    },
+    "last_updated": "2025-03-19"
+   },
+   "o3": {
+    "cost": {
+     "cache_read": 0.5,
+     "input": 2,
+     "output": 8
+    },
+    "last_updated": "2025-04-16"
+   },
+   "o3-mini": {
+    "cost": {
+     "cache_read": 0.55,
+     "input": 1.1,
+     "output": 4.4
+    },
+    "last_updated": "2025-01-29"
+   },
+   "o3-pro": {
+    "cost": {
+     "input": 20,
+     "output": 80
+    },
+    "last_updated": "2025-06-10"
+   },
+   "o4-mini": {
+    "cost": {
+     "cache_read": 0.275,
+     "input": 1.1,
+     "output": 4.4
+    },
+    "last_updated": "2025-04-16"
+   },
+   "text-embedding-3-large": {
+    "cost": {
+     "input": 0.13,
+     "output": 0
+    },
+    "last_updated": "2024-01-25"
+   },
+   "text-embedding-3-small": {
+    "cost": {
+     "input": 0.02,
+     "output": 0
+    },
+    "last_updated": "2024-01-25"
+   },
+   "text-embedding-ada-002": {
+    "cost": {
+     "input": 0.1,
+     "output": 0
+    },
+    "last_updated": "2022-12-15"
+   }
+  },
+  "name": "OpenAI"
+ },
+ "xai": {
+  "api": null,
+  "models": {
+   "grok-4.20-0309-non-reasoning": {
+    "cost": {
+     "cache_read": 0.2,
+     "context_over_200k": {
+      "cache_read": 0.4,
+      "input": 2.5,
+      "output": 5
+     },
+     "input": 1.25,
+     "output": 2.5,
+     "tiers": [
+      {
+       "cache_read": 0.4,
+       "input": 2.5,
+       "output": 5,
+       "tier": {
+        "size": 200000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-03-09"
+   },
+   "grok-4.20-0309-reasoning": {
+    "cost": {
+     "cache_read": 0.2,
+     "context_over_200k": {
+      "cache_read": 0.4,
+      "input": 2.5,
+      "output": 5
+     },
+     "input": 1.25,
+     "output": 2.5,
+     "tiers": [
+      {
+       "cache_read": 0.4,
+       "input": 2.5,
+       "output": 5,
+       "tier": {
+        "size": 200000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-03-09"
+   },
+   "grok-4.20-multi-agent-0309": {
+    "cost": {
+     "cache_read": 0.2,
+     "context_over_200k": {
+      "cache_read": 0.4,
+      "input": 2.5,
+      "output": 5
+     },
+     "input": 1.25,
+     "output": 2.5,
+     "tiers": [
+      {
+       "cache_read": 0.4,
+       "input": 2.5,
+       "output": 5,
+       "tier": {
+        "size": 200000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-03-09"
+   },
+   "grok-4.3": {
+    "cost": {
+     "cache_read": 0.2,
+     "context_over_200k": {
+      "cache_read": 0.4,
+      "input": 2.5,
+      "output": 5
+     },
+     "input": 1.25,
+     "output": 2.5,
+     "tiers": [
+      {
+       "cache_read": 0.4,
+       "input": 2.5,
+       "output": 5,
+       "tier": {
+        "size": 200000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-04-17"
+   },
+   "grok-4.5": {
+    "cost": {
+     "cache_read": 0.3,
+     "context_over_200k": {
+      "cache_read": 0.6,
+      "input": 4,
+      "output": 12
+     },
+     "input": 2,
+     "output": 6,
+     "tiers": [
+      {
+       "cache_read": 0.6,
+       "input": 4,
+       "output": 12,
+       "tier": {
+        "size": 200000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-07-08"
+   },
+   "grok-build-0.1": {
+    "cost": {
+     "cache_read": 0.2,
+     "context_over_200k": {
+      "cache_read": 0.4,
+      "input": 2,
+      "output": 4
+     },
+     "input": 1,
+     "output": 2,
+     "tiers": [
+      {
+       "cache_read": 0.4,
+       "input": 2,
+       "output": 4,
+       "tier": {
+        "size": 200000,
+        "type": "context"
+       }
+      }
+     ]
+    },
+    "last_updated": "2026-04-16"
+   },
+   "grok-imagine-image": {
+    "cost": null,
+    "last_updated": "2026-01-28"
+   },
+   "grok-imagine-image-quality": {
+    "cost": null,
+    "last_updated": "2026-04-03"
+   },
+   "grok-imagine-video": {
+    "cost": null,
+    "last_updated": "2026-01-28"
+   },
+   "grok-imagine-video-1.5": {
+    "cost": null,
+    "last_updated": "2026-05-30"
+   }
+  },
+  "name": "xAI"
+ },
+ "xiaomi": {
+  "api": "https://api.xiaomimimo.com/v1",
+  "models": {
+   "mimo-v2-flash": {
+    "cost": {
+     "cache_read": 0.0028,
+     "input": 0.14,
+     "output": 0.28
+    },
+    "last_updated": "2026-06-24"
+   },
+   "mimo-v2-omni": {
+    "cost": {
+     "cache_read": 0.0028,
+     "input": 0.14,
+     "output": 0.28
+    },
+    "last_updated": "2026-06-24"
+   },
+   "mimo-v2-pro": {
+    "cost": {
+     "cache_read": 0.0036,
+     "input": 0.435,
+     "output": 0.87
+    },
+    "last_updated": "2026-06-24"
+   },
+   "mimo-v2.5": {
+    "cost": {
+     "cache_read": 0.0028,
+     "input": 0.14,
+     "output": 0.28
+    },
+    "last_updated": "2026-06-24"
+   },
+   "mimo-v2.5-pro": {
+    "cost": {
+     "cache_read": 0.0036,
+     "input": 0.435,
+     "output": 0.87
+    },
+    "last_updated": "2026-06-24"
+   },
+   "mimo-v2.5-pro-ultraspeed": {
+    "cost": {
+     "cache_read": 0.0108,
+     "input": 1.305,
+     "output": 2.61
+    },
+    "last_updated": "2026-06-09"
+   }
+  },
+  "name": "Xiaomi"
+ },
+ "zai": {
+  "api": "https://api.z.ai/api/paas/v4",
+  "models": {
+   "glm-4.5": {
+    "cost": {
+     "cache_read": 0.11,
+     "cache_write": 0,
+     "input": 0.6,
+     "output": 2.2
+    },
+    "last_updated": "2025-07-28"
+   },
+   "glm-4.5-air": {
+    "cost": {
+     "cache_read": 0.03,
+     "cache_write": 0,
+     "input": 0.2,
+     "output": 1.1
+    },
+    "last_updated": "2025-07-28"
+   },
+   "glm-4.5-flash": {
+    "cost": {
+     "cache_read": 0,
+     "cache_write": 0,
+     "input": 0,
+     "output": 0
+    },
+    "last_updated": "2025-07-28"
+   },
+   "glm-4.5v": {
+    "cost": {
+     "input": 0.6,
+     "output": 1.8
+    },
+    "last_updated": "2025-08-11"
+   },
+   "glm-4.6": {
+    "cost": {
+     "cache_read": 0.11,
+     "cache_write": 0,
+     "input": 0.6,
+     "output": 2.2
+    },
+    "last_updated": "2025-09-30"
+   },
+   "glm-4.6v": {
+    "cost": {
+     "input": 0.3,
+     "output": 0.9
+    },
+    "last_updated": "2025-12-08"
+   },
+   "glm-4.7": {
+    "cost": {
+     "cache_read": 0.11,
+     "cache_write": 0,
+     "input": 0.6,
+     "output": 2.2
+    },
+    "last_updated": "2025-12-22"
+   },
+   "glm-4.7-flash": {
+    "cost": {
+     "cache_read": 0,
+     "cache_write": 0,
+     "input": 0,
+     "output": 0
+    },
+    "last_updated": "2026-01-19"
+   },
+   "glm-4.7-flashx": {
+    "cost": {
+     "cache_read": 0.01,
+     "cache_write": 0,
+     "input": 0.07,
+     "output": 0.4
+    },
+    "last_updated": "2026-01-19"
+   },
+   "glm-5": {
+    "cost": {
+     "cache_read": 0.2,
+     "cache_write": 0,
+     "input": 1,
+     "output": 3.2
+    },
+    "last_updated": "2026-02-12"
+   },
+   "glm-5-turbo": {
+    "cost": {
+     "cache_read": 0.24,
+     "cache_write": 0,
+     "input": 1.2,
+     "output": 4
+    },
+    "last_updated": "2026-03-16"
+   },
+   "glm-5.1": {
+    "cost": {
+     "cache_read": 0.26,
+     "cache_write": 0,
+     "input": 1.4,
+     "output": 4.4
+    },
+    "last_updated": "2026-04-07"
+   },
+   "glm-5.2": {
+    "cost": {
+     "cache_read": 0.26,
+     "cache_write": 0,
+     "input": 1.4,
+     "output": 4.4
+    },
+    "last_updated": "2026-06-13"
+   },
+   "glm-5v-turbo": {
+    "cost": {
+     "cache_read": 0.24,
+     "cache_write": 0,
+     "input": 1.2,
+     "output": 4
+    },
+    "last_updated": "2026-04-01"
+   }
+  },
+  "name": "Z.AI"
+ },
+ "zhipuai": {
+  "api": "https://open.bigmodel.cn/api/paas/v4",
+  "models": {
+   "glm-4.5": {
+    "cost": {
+     "cache_read": 0.11,
+     "cache_write": 0,
+     "input": 0.6,
+     "output": 2.2
+    },
+    "last_updated": "2025-07-28"
+   },
+   "glm-4.5-air": {
+    "cost": {
+     "cache_read": 0.03,
+     "cache_write": 0,
+     "input": 0.2,
+     "output": 1.1
+    },
+    "last_updated": "2025-07-28"
+   },
+   "glm-4.5-flash": {
+    "cost": {
+     "cache_read": 0,
+     "cache_write": 0,
+     "input": 0,
+     "output": 0
+    },
+    "last_updated": "2025-07-28"
+   },
+   "glm-4.5v": {
+    "cost": {
+     "input": 0.6,
+     "output": 1.8
+    },
+    "last_updated": "2025-08-11"
+   },
+   "glm-4.6": {
+    "cost": {
+     "cache_read": 0.11,
+     "cache_write": 0,
+     "input": 0.6,
+     "output": 2.2
+    },
+    "last_updated": "2025-09-30"
+   },
+   "glm-4.6v": {
+    "cost": {
+     "input": 0.3,
+     "output": 0.9
+    },
+    "last_updated": "2025-12-08"
+   },
+   "glm-4.7": {
+    "cost": {
+     "cache_read": 0.11,
+     "cache_write": 0,
+     "input": 0.6,
+     "output": 2.2
+    },
+    "last_updated": "2025-12-22"
+   },
+   "glm-4.7-flash": {
+    "cost": {
+     "cache_read": 0,
+     "cache_write": 0,
+     "input": 0,
+     "output": 0
+    },
+    "last_updated": "2026-01-19"
+   },
+   "glm-4.7-flashx": {
+    "cost": {
+     "cache_read": 0.01,
+     "cache_write": 0,
+     "input": 0.07,
+     "output": 0.4
+    },
+    "last_updated": "2026-01-19"
+   },
+   "glm-5": {
+    "cost": {
+     "cache_read": 0.2,
+     "cache_write": 0,
+     "input": 1,
+     "output": 3.2
+    },
+    "last_updated": "2026-02-11"
+   },
+   "glm-5.1": {
+    "cost": {
+     "cache_read": 0.26,
+     "cache_write": 0,
+     "input": 1.4,
+     "output": 4.4
+    },
+    "last_updated": "2026-03-27"
+   },
+   "glm-5.2": {
+    "cost": {
+     "cache_read": 0.26,
+     "cache_write": 0,
+     "input": 1.4,
+     "output": 4.4
+    },
+    "last_updated": "2026-06-13"
+   },
+   "glm-5v-turbo": {
+    "cost": {
+     "cache_read": 1.2,
+     "cache_write": 0,
+     "input": 5,
+     "output": 22
+    },
+    "last_updated": "2026-04-01"
+   }
+  },
+  "name": "Zhipu AI"
+ }
+}

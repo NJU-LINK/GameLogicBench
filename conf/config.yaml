@@ -1,0 +1,128 @@
+defaults:
+  - _self_
+
+# ---- Global infrastructure ----
+result_dir: ./result
+image: geb-all                 # our own image; never reuse someone else's
+container_name_prefix: geb     # every container name is prefixed geb-, and removed after use
+
+# ---- CLI run selectors (plain Hydra fields — there are no CLI-only keys) ----
+# Subcommand: picks the phase. Hydra has no native subcommands, so we dispatch after cfg loads.
+command: run                   # run | judge | solve | record
+
+# Task selection. One key covers a single task, several, or the whole library.
+task: atom_move_navigation     # a name | [a,b] | 'a,b' (we split it) | all (filesystem expansion)
+
+# The solution under test.
+# Calibration references: solution in {proper, naive}.
+# Model solutions: solution = a registry entry name; the agent writes the controller in-container.
+solution: proper               # top segment of the result path (model solutions get a longer slug)
+# Agent backend (scaffold): separates solutions the same model produced through different agents —
+# the result path carries <model>@<scaffold>@<effort>@<net>. Reference solutions have no scaffold
+# and keep their bare name. cc = vendored claude-code; codex = vendored codex CLI (Responses API);
+# opencode = vendored opencode. A new backend takes its own slug, so runs never overwrite.
+scaffold: cc
+
+# Reasoning-effort tier (coding agents only), part of the result path so runs cannot collide.
+# low/medium/high/xhigh/max. The same model at a different effort produces a different-quality
+# solution, so the tiers must be stored apart — otherwise a medium run overwrites a high one.
+effort: high
+
+# pass@k sampling (model solutions only; proper/naive are deterministic and have no sample axis)
+sample_num: 1                  # run samples 0..k-1 (sample_num=3 -> sample_{0,1,2}/)
+sample_idx: null               # pin a single sample (targeted top-up / rerun / record selection)
+
+# Single-cell selector (record and targeted judge: one task, one scenario, one seed)
+scenario: null                 # a scenario of the task (record defaults to baseline)
+seed: null                     # a seed of that scenario (record defaults to the first)
+
+# Behaviour switches
+rerun: false                   # force a rerun, wiping the subtree; judge skips cells that already
+                               # have a result.json
+
+# ---- judge phase (deterministic black-box grading, network=none) ----
+judge:
+  concurrency: 16              # judge containers in flight. Light CPU work: one seed takes seconds
+                               # and needs no network, so a many-core host can go higher. Under the
+                               # run pipeline this pool coexists with the solve pool, so peak
+                               # containers = judge.concurrency + solve.concurrency.
+  resources:                   # Per-container ceilings — frozen library-wide for reproducibility.
+    cpus: 1                     # Each task.yaml pins the same values, so they freeze with the task
+    memory: 1g                  # (traceable via tasks_commit); these are the fallback defaults.
+    pids_limit: 256             # Repo-scale tasks may raise them in their own task.yaml.
+  timeout:
+    container: 120             # in-container seconds (one seed's godot judge run)
+    kill_after: 15             # grace period after SIGTERM
+    wall: 180                  # outer wall clock = inner + margin
+
+# ---- solve phase (agent-in-container: writes the controller for the game/ project) ----
+# Which model solves is not declared here: it comes from cfg.solution (see above).
+solve:
+  concurrency: 4               # parallel agent-session containers (one per task, workspaces are
+                               # disjoint). Do not raise this much: the bottleneck is remote
+                               # generation speed, so more parallelism only burns API quota and
+                               # trips rate limits — the opposite of judge's CPU bottleneck.
+  # Egress whitelist network: a custom docker bridge plus a DOCKER-USER whitelist that admits only
+  # DNS and the model endpoints in conf/models/default.yaml, rejecting everything else (an
+  # immediate failure, never a hang). In this mode no host proxy env is injected into the
+  # container. The mechanism and its self-healing live in geb/infra/egress.py; the operational
+  # account is in docs/running.md ("solve egress whitelist"). judge and record stay on
+  # network=none and are unaffected. Set this back to `bridge` for a full-egress control run.
+  network: geb-egress
+  resources:                   # Session-container ceilings (CLI + large context + the agent's own
+                               # godot self-tests). Unlike judge's, these are NOT frozen: adjust
+                               # them to your hardware and quota. Only repo-scale tasks generally
+                               # need more, declared in their own task.yaml.
+    cpus: 2                    # the agent CLI is single-threaded; 2 cores covers light self-tests
+    memory: 8g                 # accumulated session context plus CLI overhead
+    pids_limit: 1024           # CLI plus godot subprocesses; guards against pthread EAGAIN
+  timeout:
+    container: 3600            # in-container seconds for the agent session (raised from 2500 to
+                               # rescue sessions that are slow but still converging)
+    kill_after: 20
+    wall: 3720
+  # When a session ran credibly (completed/timeout/oom/agent_error), took at least this many turns,
+  # and still produced nothing: judge it anyway, recording "spent the whole budget without writing
+  # code" as a real fail (an empty stub grades as all-fail) instead of leaving the cell hanging for
+  # a rerun. The threshold excludes instant-exit and refusal sessions, which stay unjudged and
+  # rerunnable. 0 disables this. Infrastructure failures (aborted / stream_broken / daemon_error)
+  # are never judged and ignore this key.
+  judge_unproduced_after_turns: 20
+
+# ---- record phase (renders the judge's deterministic simulation into real gameplay video) ----
+# On-demand: python -m geb.cli command=record solution=<sol> task=<task> seed=<n>
+#   -> result/<sol>/<task>/test/<scenario>_<n>/record/run.mp4
+# A separate path from judge (different command, module and scene) but the same geb-all image
+# (it ships xvfb, software rendering and ffmpeg). There is only ever one simulation —
+# viz/record.gd extends judge.gd through the _record_mode hook — and one set of visuals
+# (game/view.gd, shared by the F5 preview and the recording). While recording, the official
+# game/ visual layer is force-overlaid on top of the agent's workspace (tamper-proofing), textures
+# are pre-imported by one headless --import pass, and the finished video is cross-checked key by
+# key against the judge's result.json.
+record:
+  # No image key here: judge/solve/record all use the global image, one single source.
+  window:                      # render window = world size; this is the global default. Override
+    width: 640                 # per task via record.window.{width,height} in its task.yaml (must
+    height: 480                # match that task's viz/project.godot viewport).
+  # llvmpipe spawns one rasterizer thread per CPU core by default, which on a many-core host trips
+  # pids_limit (pthread EAGAIN). Pinning a small count avoids the thread explosion and is more
+  # deterministic — the physics simulation is single-threaded and 2D rendering needs no threads.
+  lp_num_threads: 4
+  resources:                   # wider than judge: software rendering plus ffmpeg
+    cpus: 4
+    memory: 4g
+    pids_limit: 1024
+  timeout:
+    container: 300             # in-container seconds (overlay + godot render + ffmpeg transcode)
+    kill_after: 20
+    wall: 360
+
+hydra:
+  run:
+    dir: logs/${now:%Y-%m-%d_%H-%M-%S}_${solution}
+  sweep:
+    dir: logs/${now:%Y-%m-%d_%H-%M-%S}_sweep
+    subdir: ${solution}
+  job:
+    chdir: false               # do not chdir: ./result and ./tasks resolve from the repo root
+  output_subdir: .hydra

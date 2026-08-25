@@ -1,0 +1,77 @@
+# Hand-written rate table — scripts/pricing reads it and overrides, PER MODEL, whatever the
+# automatic sources found.
+#
+# Source precedence: this file > the models.dev snapshot (cache/models_dev.json) > litellm.
+# Merge semantics (NOT a whole-table replacement): a model listed here uses these numbers; a model
+# absent here falls through to the automatic sources; a model none of the three know gets cost
+# n/a — never a guess, never a default rate. So write only the entries you actually want to change.
+#
+# The unit is always USD per 1M tokens. (litellm's own table is per-token and the module multiplies
+# by 1e6 when reading it; models.dev is already per-1M. Hand-written entries are per-1M, matching
+# how vendors present their pricing pages, which saves a mental conversion.)
+#
+# The four rate fields map to cost.py's four normalised billing components:
+#   input        fresh input, not served from cache
+#   cache_read   input served from cache. THIS ONE DECIDES THE TOTAL: in most configurations cache
+#                reads are 65-96% of all input, so getting it wrong by an order of magnitude moves
+#                the total by 5-8x. Real case: litellm carried a stale resale entry for one model
+#                at cache_read 0.2 while the vendor's own first-party rate was 0.0036 — 55x apart,
+#                which on the ledger was $31.36 against $4.23.
+#                Omitting it falls back to the input rate, roughly an order of magnitude too high,
+#                so fill it explicitly even when you cannot get the exact discount. Vendors differ
+#                enormously — do not copy one vendor's ratio onto another: observed multipliers of
+#                the input rate range from about 0.008x to 0.19x across the models measured here.
+#   cache_write  writing to cache. Non-zero only for the cc scaffold against an Anthropic endpoint
+#                (3-5% of all input); zero for every other scaffold. Omitting it falls back to the
+#                input rate.
+#   output       output, reasoning included — reasoning is a subset of output, not billed twice.
+#   source       does not enter the computation, pure provenance: where this rate came from and
+#                when it was checked. The date matters, because these models iterate fast and a
+#                six-month-old rate will not match today's bill. The audit section prints it in
+#                its "upstream updated" column.
+#
+# Convention warning: the automatic sources all carry each vendor's PUBLIC list price, so the
+#   figures mean "equivalent spend at public list price" — comparable and externally checkable,
+#   but NOT what a self-hosted gateway or proxy layer actually settled at. To report real spend,
+#   override the models here and say so in source. Never mix the two conventions in one table.
+
+rates:
+  # deepseek-v4-pro-0813 — the 0813 snapshot bills at the current list price of API id
+  #   deepseek-v4-pro (checked against the official pricing page on 2026-08-15: input 0.435 /
+  #   cache hit 0.003625 / output 0.87). DeepSeek has announced peak/off-peak pricing at a higher
+  #   rate from 2026-08-17 00:00 (UTC+8); every session in this evaluation finished before that
+  #   took effect, so the current price applies.
+  deepseek-v4-pro-0813:
+    input: 0.435
+    cache_read: 0.003625
+    cache_write: 0.435
+    output: 0.87
+    source: "api-docs.deepseek.com/quick_start/pricing, checked 2026-08-15 (before the 08-17 rise)"
+
+  # glm-5.3 — official API pricing is NOT PUBLISHED yet (checked 2026-08-15: both the
+  #   international and domestic model pages say "API coming soon" and neither pricing page has a
+  #   glm-5.3 row; the 1.4/0.26/4.4 under opencode-go on models.dev is a placeholder and is not
+  #   used). Per this file's discipline we do not fill in a placeholder rate and leave it n/a;
+  #   revisit the vendor's pricing page once it is published.
+
+  # Example (uncomment and fill in to take effect):
+  # kimi-k3:
+  #   input: 3.0
+  #   cache_read: 0.3
+  #   cache_write: 3.0
+  #   output: 15.0
+  #   source: "self-hosted gateway settlement price, checked 2026-08-09"
+
+  # Two models worth noting — not errors, but choices of convention you may want to override:
+  #
+  # deepseek-v4-flash-0731 — a self-hosted vllm deployment (see the matching base_url in
+  #   conf/models/default.yaml), so there is no per-token bill at all. It currently picks up the
+  #   vendor's public deepseek-v4-flash rate as an equivalent conversion (0.14 / 0.0028 / 0.28).
+  #   To express "self-hosted, no token cost" instead, set all four fields to 0 here and note in
+  #   source that the real cost is machine time.
+  #
+  # qwen-3.8-max — this configuration almost never hits cache (fresh input 283M against 21M cache
+  #   reads, the exact inverse of every other configuration), so its total is dominated by the
+  #   input rate (the highest bill in the set), which makes a wrong input rate hurt most here. It
+  #   picks up the vendor's first-party rate 2.0 / 0.25 / 6.0 (the local name carries a hyphen and
+  #   is matched through _ALIAS in pricing/__init__.py).

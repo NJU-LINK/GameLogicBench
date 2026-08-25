@@ -1,0 +1,14 @@
+# keep third_party/ OUT of dockerignore: the Dockerfile COPYs third_party/vendor/godot and
+# third_party/packages/ into the image.
+.git
+result*/
+logs/
+tasks/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+docs/
+tests/

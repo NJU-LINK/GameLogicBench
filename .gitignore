@@ -1,0 +1,30 @@
+# third-party fixed resources (large; provisioned at build time):
+#   third_party/vendor/godot        — Godot headless binary
+#   third_party/packages/*.tgz      — vendored claude-code agent
+third_party/
+# run outputs
+result*/
+logs/
+# Manually redirected run logs (session-local); should move to Hydra/OmegaConf's own logging.
+run_logs/
+# pre-execution alignment records (grill-me skill; session-local, not repo history)
+.grill/
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+# tasks are content/data (game project + judge + reference solutions + assets + seeds), managed
+# out-of-band, not tracked in this repo. Includes the godot import caches under tasks/**/.godot/.
+tasks/
+
+# real model registry (live api_key)
+conf/models/default.yaml
+# macOS
+.DS_Store
+docs/project/HANDOFF_*.md
+
+# Per-machine project preferences (CLAUDE.local.md); holds local interpreter paths.
+/CLAUDE.local.md

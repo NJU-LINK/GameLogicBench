@@ -1,0 +1,53 @@
+# TEMPLATE. Copy to default.yaml and fill real values. default.yaml is gitignored
+# (it holds real api_keys). Used by the v1 agent-in-container solve phase.
+#
+#   cp conf/models/default.yaml.example conf/models/default.yaml   # then edit
+#
+# SCHEMA: every model declares each scaffold it supports under a mandatory `scaffolds:` block, and
+# each block is SELF-CONTAINED (api_type / id / base_url / api_key, plus wire_api / defaults where
+# the scaffold needs them). There are NO top-level endpoint fields — endpoint URL, wire protocol,
+# and the model id sent on the wire are all (model × scaffold) properties, so resolve_provider reads
+# ONLY scaffolds.<scaffold> and fail-fasts on an undeclared (model, scaffold) pair (never guesses).
+# api_type ∈ {anthropic (cc), openai-responses (codex), openai-compatible (opencode)}.
+models:
+  # A model reachable by all three scaffolds (e.g. a self-hosted vLLM deploy). Each scaffold block
+  # is complete on its own — note base_url differs (cc = API root; codex/opencode = down to /v1).
+  example-multi-scaffold:
+    scaffolds:
+      cc:                              # claude-code: Anthropic /v1/messages
+        api_type: anthropic
+        id: "<model-id>"
+        base_url: "<gateway-root>"     # cc appends /v1/messages
+        api_key: "<your-key>"          # or ${oc.env:MY_API_KEY}
+      codex:                           # codex: OpenAI Responses
+        api_type: openai-responses
+        id: "<model-id>"
+        base_url: "<gateway>/v1"       # codex appends /responses
+        api_key: "<your-key>"
+        wire_api: responses
+        defaults:
+          reasoning_effort: medium
+      opencode:                        # opencode: openai-compatible Chat via @ai-sdk
+        api_type: openai-compatible
+        id: "<model-id>"
+        base_url: "<gateway>/v1"
+        api_key: "<your-key>"
+
+  # A model used by a single scaffold — declare just that one. (cc-only Anthropic gateway example.)
+  example-cc-only:
+    scaffolds:
+      cc:
+        api_type: anthropic
+        id: "<ep-id>"
+        base_url: "<gateway-url>"
+        api_key: "<your-key>"
+
+  # Cross-protocol via a translating proxy: cc speaks Anthropic to the proxy, which forwards to a
+  # non-Anthropic backend. id is the PROXY's alias for the model (not the raw backend endpoint id).
+  example-proxy-cc:
+    scaffolds:
+      cc:
+        api_type: anthropic
+        id: "<proxy-model-alias>"
+        base_url: "http://<proxy-host>:<port>"
+        api_key: "<proxy-key>"
