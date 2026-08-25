@@ -11,7 +11,7 @@ A few consequences of that stance, which shape the whole harness:
 - **Held-out scenarios, not held-out rules.** Each task declares a scenario table: the agent develops against `baseline`, and the judge additionally applies hand-designed harder scenarios from the same, already-disclosed rule family.
 - **Composite tasks arm one axis at a time**, so a first failure can be attributed to a specific capability rather than collapsing into "it failed somewhere".
 
-The task library — game projects, frozen judges, reference solutions, assets — lives in its own repository and is not tracked here.
+The task library — game projects, frozen judges, reference solutions, assets — lives in its own repository, [NJU-LINK/GameLogicBench-Tasks](https://github.com/NJU-LINK/GameLogicBench-Tasks), and is not tracked here. Clone it to `tasks/` under this repository's root before running anything; the directory name must be exactly `tasks`, since the CLI resolves `./tasks` relative to the repository root.
 
 The harness package is named `geb`, so the CLI entry point is `python -m geb.cli`.
 
