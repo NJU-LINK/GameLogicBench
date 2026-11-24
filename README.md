@@ -190,6 +190,13 @@ Dockerfile    # reproducible judge and recording image
 | [`scripts/score.py`](scripts/score.py) | On-demand PASS/FAIL matrices and pass@k summaries |
 | [`scripts/leaderboard.py`](scripts/leaderboard.py) | Model leaderboard by atom, combo, and repository-scale task level |
 
+## License
+
+The harness is released under the [MIT License](LICENSE). The task library is licensed separately:
+code under MIT, task content under CC BY 4.0, and vendored third-party projects under their own
+licenses. See its [`LICENSE`](https://github.com/NJU-LINK/GameLogicBench-Tasks/blob/main/LICENSE)
+and [`NOTICE.md`](https://github.com/NJU-LINK/GameLogicBench-Tasks/blob/main/NOTICE.md).
+
 ## Citation
 
 If GameLogicBench supports your work, please cite:
